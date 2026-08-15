@@ -1,4 +1,4 @@
-# OES RAID LED Controller
+# oes指示灯
 
 适用于 OES 一代三盘位设备的 Linux `mdadm` RAID 指示灯控制器。
 
