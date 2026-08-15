@@ -1,0 +1,3 @@
+# Arguments passed to /usr/local/sbin/oes-raid-leds.py by systemd.
+# These defaults match the OES first-generation three-disk chassis.
+OES_RAID_LED_ARGS="--md md0 --led green:disk --led green:disk_1 --led green:disk_2 --ata-trigger ata1 --ata-trigger ata2 --ata-trigger ata3 --green-power green:power --red-power red:power --breath-seconds 4.0 --failure-on-ms 80 --failure-off-ms 80"

@@ -1,0 +1,14 @@
+[Unit]
+Description=OES md RAID breathing and failed-disk LED controller
+After=local-fs.target mdmonitor.service
+
+[Service]
+Type=simple
+EnvironmentFile=-/etc/default/oes-raid-leds
+ExecStart=/usr/bin/python3 /usr/local/sbin/oes-raid-leds.py $OES_RAID_LED_ARGS
+Restart=always
+RestartSec=3
+Nice=10
+
+[Install]
+WantedBy=multi-user.target
